@@ -1,4 +1,4 @@
 # surveyform
 This is a simple survey form made with html &amp; css.
 It is part of Freecodecamp.org site's "Responsive Web Design Cirtificate" challenge project. 
-This site is live here: 
+This site is live here: https://nasimuddin01.github.io/surveyform/
