@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+  <h1 id="title"> Survey Form </h1>
+  <div id="form-outer">
+    <p id=description> What do you think about climate change? </p>
+    <form id="survey-form" method="GET" action="/">
+
+      <div class="labels">
+        <label id="name-label" for="name"> Name: </label>
+      </div>
+      <div class="rightSide">
+        <input autofocus type="text" name="name" id="name" class="input-value" placeholder="Enter your name" required>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email"> Email: </label>
+        </div>
+        <div class="rightSide">
+          <input type="email" name="email" id="email" class="input-value" required placeholder="Enter your Email">
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age">Age: </label>
+        </div>
+        <div class="rightSide">
+          <input type="number" name="age" id="number" min="10" max="125" class="input-value" placeholder="Age">
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="currentPos">Do you think our world's climate is changing?</label>
+        </div>
+        <div class="rightSide">
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option value="AbsoluteYes">Yes, Absolutely</option>
+            <option value="Yes">I think so</option>
+            <option value="DoNotKnow">I don't know</option>
+            <option value="other">Absolutely, Not changing</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="userRating">Will you take step to stop climate change?</label>
+        </div>
+        <div class="rightSide">
+          <div class="block">
+            <label>Definitely<input name="radio-buttons" value="1" type="radio" class="userRatings"></label>
+          </div>
+          <div class="block">
+            <label>Maybe<input name="radio-buttons" value="2" type="radio" class="userRatings"></label>
+          </div>
+          <div class="block">
+            <label>Not sure<input name="radio-buttons" value="3" type="radio" class="userRatings"></label>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="most-like">Who is the most responsible for taking step to prevent climate change? </label>
+        </div>
+        <div class="rightSide">
+          <select id="most-like" name="mostLike" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Government</option>
+            <option value="projects">Industry</option>
+            <option value="community">Community</option>
+            <option value="openSource">People</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">What step do you take to stop climate change? </label>
+        </div>
+        <div class="rightSide">
+          <ul id="preferences">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Prevent Carbon Emission</label></li>
+            <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRatings">Save Water</label></li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Reduce trash pile</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">UseBycyle</label></li>
+            <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Use Renewable energy</label></li>
+            <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Plant more trees</label></li>
+            <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings"> Save water</label></li>
+            <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Avoid plastic bags</label></li>
+            <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Use biodegrable package</label></li>
+            <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">etc</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">How do you like to make our world's climate good again?</label>
+        </div>
+        <div class="rightSide" style="padding-top:0.5rem;">
+          <textarea id="comments" class="input-value" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
